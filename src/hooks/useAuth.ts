@@ -27,7 +27,7 @@ export const useAuth = () => {
         )
         .finally(() => setLoading(false));
     },
-    [history]
+    [history, showMessage]
   );
 
   return { loading, login };
